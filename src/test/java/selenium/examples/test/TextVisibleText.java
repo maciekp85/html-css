@@ -11,6 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
  * Created by nishi on 2015-08-03.
  */
 public class TextVisibleText {
+    
     private WebDriver driver;
 
     @Before
