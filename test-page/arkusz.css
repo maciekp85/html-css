@@ -1,0 +1,16 @@
+body {
+    text-align: justify;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    margin-top: 1cm;
+}
+p {
+    font-family: Arial, Helvetica;
+    font-size: 10pt;
+    font-weight: normal;
+    text-indent: 3 em;
+}
+.tyt {
+    border-bottom: dotted 1px black;
+    padding-bottom: 10px;
+}

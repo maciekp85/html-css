@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>Page 2: Forms</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="This page is for testing">
+    <meta name="keywords" content="html, css, selenium, webdriver, java, testing">
+    <meta http-equiv="content-language" content="en">
+    <meta name="author" content="Maciej Piotrowski">
+    <link rel="stylesheet" href="arkusz.css" type="text/css">
+</head>
+<body>
+    <h1 class="tyt"><a name="page2">PAGE 2: FORMS</a></h1>
+    <h2>Forms</h2>
+
+    <form enctype="text/plain" action="mailto:nishi@wimiip.pl?subject=Questionnaire theme" method="post">
+        <fieldset>
+            <legend>Input your name and surname:</legend>
+            <p><input type="text" name="surname" value="Churchill" size="30" maxlength="40"></p>
+        </fieldset>
+    </form>
+
+    <div style="position:relative">
+        <form enctype="text/plain" action="mailto:nishi@wimiip.pl?subject=Questionnaire theme" method="post">
+            <fieldset>
+                <legend>Form - example</legend>
+                <p><strong>Name</strong>: <input type="text" name="name" value="John" size="30" maxlength="40"
+                        style="position:absolutel; left:150px; background-color: cornsilk; font-style: italic;
+                        color: gray"></p>
+                <p><strong>Surname</strong>: <input type="text" name="surname" value="Churchill" size="30" maxlength="40"
+                        style="position:absolutel; left:150px; background-color: cornsilk; font-style: italic;
+                        color: gray"></p>
+                <p><strong>Profession</strong>: <input type="text" name="surname" value="Engineer" size="30" maxlength="40"
+                        style="position:absolutel; left:150px; background-color: cornsilk; font-style: italic;
+                        color: gray"></p>
+            </fieldset>
+        </form>
+    </div>
+
+    <fieldset>
+        <legend>Password field - example</legend>
+        <p>Input password: <input type="password" name="password" value="" size="20" maxlength="20"></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Options field - example</legend>
+        <p><input type="radio" name="sex" value="woman" checked="checked">Woman</p>
+        <p><input type="radio" name="sex" value="man">Man</p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Check box - example</legend>
+        <p><input type="checkbox" name="language" value="english">English</p>
+        <p><input type="checkbox" name="language" value="french">French</p>
+        <p><input type="checkbox" name="language" value="polish">Polish</p>
+        <p><input type="checkbox" name="language" value="chinese">Chinese</p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Select - example</legend>
+        <div>
+        <select name="list_name" size="3">
+            <option>first position</option>
+            <option>second position</option>
+            <option>third position</option>
+        </select>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Select - second example (multiple)</legend>
+        <div>
+            <select name="fruits" size="3" multiple="multiple">
+                <option selected="selected">strawberries</option>
+                <option>raspberries</option>
+                <option>wild strawberries</option>
+                <option>cherries</option>
+                <option>plums</option>
+            </select>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Select - third example (optgroup)</legend>
+        <div>
+            <select name="fruits" size="3" multiple="multiple">
+                <optgroup label="soft fruits">
+                <option selected="selected">strawberries</option>
+                <option>raspberries</option>
+                <option>wild strawberries</option>
+                </optgroup>
+                <optgroup label="hard fruits">
+                <option>cherries</option>
+                <option>plums</option>
+                </optgroup>
+            </select>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend><strong>Text area</strong> - example</legend>
+        <form action="mailto:nishi@wimiip.pl" method="post">
+            <p><strong>Input your warning:</strong></p>
+            <p><textarea name="warning" rows="8" cols="50" style="color:gray; font-style: italic;">here is the place for your free opinions</textarea> </p>
+            <input type="submit" value="Send email to us"><input type="reset" value="Reset all your information">
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Button - example</legend>
+        <button>Lion</button>
+    </fieldset>
+    
+    <h2><a href="../index.html#return">Return to main page</a> </h2>
+
+</body>
+</html>
