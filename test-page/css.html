@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="arkusz.css" type="text/css">
     <style type="text/css">
         p {font-family: Times New Roman}
-        h1 {font-size: 30pt}
+        h1 {font-size: 30pt; }
         ul {font-weight: bold}
         h2 {color: #FF0000}
-        h3 {font-variant: small-caps; font-size: 15pt; color: green; font-family: Courier}
+        h3 {font-variant: small-caps; font-size: 15pt; color: green; font-family: Courier; page-break-before: always}
     </style>
 </head>
 <body>
@@ -218,6 +218,59 @@
 
     <p>Line with 50% width of the parent</p>
     <hr style="width: 50%">
+
+    <h3>Position</h3>
+    <p><ins>Static position</ins></p>
+    <p style="position:static;">Text of paragraph</p>
+    <p style="position:static; left:30px">Text of paragraph with additional distance</p>
+
+    <p><ins>Other examples</ins></p>
+    <p style="position: relative; left: 200px; top: 50px width: 300px">This paragraph has relative position, it is postponed 200 pixels from left margin
+    and 50 pixels down. Paragraph field has 300 pixels of width. In fact it should be showed just under given above definition, but positioning transferred it on the right and left.</p>
+
+    <div style="position: relative; left: 200px; top: 50px; width: 300px;">
+        List postponed on the right about 200 pixels and has 300 pixels width.
+        <ul>
+            <li>This is the first point list This is the first point list</li>
+            <li>This is the second point list This is the second point list</li>
+            <li>This is the third point list This is the third point list</li>
+        </ul>
+    </div>
+
+    <p style="margin-top: 100px;"><ins>Absolute position - image on the top</ins></p>
+    <div style="position: absolute; right: 0%; bottom: 0%;">
+        <p>Absolute position: right: 0%; bottom: 0%;</p>
+        <img src="lion.jpg" width="56" height="51" alt="Lion" />
+    </div>
+    <p><ins>Relative position: div, img: absolute position</ins></p>
+    <div style="position: relative; width: 400px; height: 150px; border: 1px dotted black;">
+        <img src="lion.jpg" width="56" height="51" alt="Lion" style="position: absolute; left: 20px; top: 20px;">
+        <p style="position: absolute; bottom: 10%; right: 10%; border: 1px solid green; width: 200px; padding: 10px">This is some paragraph</p>
+    </div>
+
+    <div style="position: fixed; top: 5em; right: 10em; border: dotted 1px; padding:5px; background-color: transparent;">
+        <p><strong>Fixed position - example</strong>
+        <p><strong>Polish portals</strong></p>
+        <a href="http://www.onet.pl">Onet.pl</a><br>
+        <a href="http://www.wp.pl">Wirtualna Polska</a><br>
+        <a href="http://www.interia.pl">Interia.pl</a><br>
+    </div>
+
+    <h3>Cropping</h3>
+
+    <p><ins>Cropping image</ins></p>
+    <div style="position: relative; width: 400px; height: 150px; border: 1px dotted black;">
+        <img src="lion.jpg" width="80" height="114" alt="Lion" style="position: absolute;">
+        <img src="lion.jpg" width="80" height="114" alt="Lion" style="position: absolute; top: 0px; left: 100px; clip:rect(20px 60px 114px 0px);">
+    </div>
+
+    <p><ins>Cropping other elements</ins></p>
+    <div style="position: relative; width: 400px; height: 150px; border: 1px dotted black;">
+        <h1 style="position: absolute; clip:rect(15px 210px 32px 0px)">Cropped first level title</h1>
+    </div>
+
+    <h3>Outline</h3>
+    <img src="lion.jpg" alt="" width="263" height="236" style="outline: solid">
 
     <h2><a href="../index.html#return">Return to main page</a> </h2>
 </body>
