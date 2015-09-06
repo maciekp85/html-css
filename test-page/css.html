@@ -14,6 +14,15 @@
         ul {font-weight: bold}
         h2 {color: #FF0000}
         h3 {font-variant: small-caps; font-size: 15pt; color: green; font-family: Courier; page-break-before: always}
+        p.star:before { content: "* ";}
+        p.green_dot:before {content: url(lion.jpg)}
+        p.counter1:before {counter-increment: decimal_counter; content: counter(decimal_counter, decimal)}
+        p.counter2:before {counter-increment: greek_counter; content: counter(greek_counter, lower-greek)}
+        p { quotes: "\201e" "\201d";}
+        p.quote:before {content: open-quote; }
+        p.quote:after {content: close-quote; )
+        div.sufi {content: url(../lion.jpg)}
+        span.kato {content: "ceterum censeo Carthagineum esse delendam" }
     </style>
 </head>
 <body>
@@ -272,6 +281,27 @@
     <h3>Outline</h3>
     <img src="lion.jpg" alt="" width="263" height="236" style="outline: solid">
 
+    <h3>Generate content</h3>
+
+    <p><ins>A reference to the string</ins></p>
+    <p class="star">Paragraph content (before: *)</p>
+
+    <p><ins>A reference to the image</ins></p>
+    <p class="green_dot">Paragraph content (before: img)</p>
+
+    <p><ins>A reference to the counter</ins></p>
+    <p class="counter1">Paragraph content (decimal)</p>
+    <p class="counter2">Paragraph content (lower-greek)</p>
+
+    <p><ins>A reference to the quote</ins></p>
+    <p class="quote">Paragraph content</p>
+
+    <p><ins>Stand-alone use a content (only used by Opera and Chrome) </ins></p>
+    <div class="sufi">[Sufi's photo]</div>
+
+    <p>How older Kato said: <span class="kato">[quote from Katon]</span> </p>
+
     <h2><a href="../index.html#return">Return to main page</a> </h2>
+
 </body>
 </html>
