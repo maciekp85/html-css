@@ -7,7 +7,7 @@
     <meta name="keywords" content="html, css, selenium, webdriver, java, testing">
     <meta http-equiv="content-language" content="en">
     <meta name="author" content="Maciej Piotrowski">
-    <link rel="stylesheet" href="arkusz.css" type="text/css">
+    <link rel="stylesheet" href="css/arkusz.css" type="text/css">
     <style type="text/css">
         p {font-family: Times New Roman}
         h1 {font-size: 30pt; }
@@ -15,13 +15,13 @@
         h2 {color: #FF0000}
         h3 {font-variant: small-caps; font-size: 15pt; color: green; font-family: Courier; page-break-before: always}
         p.star:before { content: "* ";}
-        p.green_dot:before {content: url(lion.jpg)}
+        p.green_dot:before {content: url(../image/lion.jpg)}
         p.counter1:before {counter-increment: decimal_counter; content: counter(decimal_counter, decimal)}
         p.counter2:before {counter-increment: greek_counter; content: counter(greek_counter, lower-greek)}
         p { quotes: "\201e" "\201d";}
         p.quote:before {content: open-quote; }
         p.quote:after {content: close-quote; )
-        div.sufi {content: url(../lion.jpg)}
+        div.sufi {content: url(../../image/lion.jpg)}
         span.kato {content: "ceterum censeo Carthagineum esse delendam" }
     </style>
 </head>
@@ -216,7 +216,7 @@
     </table>
 
     <p>IMG: style="width: 4cm"</p>
-    <img src="lion.jpg" alt="lion" style="width: 4cm; border: solid 1px">
+    <img src="../../image/lion.jpg" alt="lion" style="width: 4cm; border: solid 1px">
 
     <p>UL: style="width: 7cm"</p>
     <ul style="width: 7cm">
@@ -249,11 +249,11 @@
     <p style="margin-top: 100px;"><ins>Absolute position - image on the top</ins></p>
     <div style="position: absolute; right: 0%; bottom: 0%;">
         <p>Absolute position: right: 0%; bottom: 0%;</p>
-        <img src="lion.jpg" width="56" height="51" alt="Lion" />
+        <img src="../../image/lion.jpg" width="56" height="51" alt="Lion" />
     </div>
     <p><ins>Relative position: div, img: absolute position</ins></p>
     <div style="position: relative; width: 400px; height: 150px; border: 1px dotted black;">
-        <img src="lion.jpg" width="56" height="51" alt="Lion" style="position: absolute; left: 20px; top: 20px;">
+        <img src="../../image/lion.jpg" width="56" height="51" alt="Lion" style="position: absolute; left: 20px; top: 20px;">
         <p style="position: absolute; bottom: 10%; right: 10%; border: 1px solid green; width: 200px; padding: 10px">This is some paragraph</p>
     </div>
 
@@ -269,8 +269,8 @@
 
     <p><ins>Cropping image</ins></p>
     <div style="position: relative; width: 400px; height: 150px; border: 1px dotted black;">
-        <img src="lion.jpg" width="80" height="114" alt="Lion" style="position: absolute;">
-        <img src="lion.jpg" width="80" height="114" alt="Lion" style="position: absolute; top: 0px; left: 100px; clip:rect(20px 60px 114px 0px);">
+        <img src="../../image/lion.jpg" width="80" height="114" alt="Lion" style="position: absolute;">
+        <img src="../../image/lion.jpg" width="80" height="114" alt="Lion" style="position: absolute; top: 0px; left: 100px; clip:rect(20px 60px 114px 0px);">
     </div>
 
     <p><ins>Cropping other elements</ins></p>
@@ -279,7 +279,7 @@
     </div>
 
     <h3>Outline</h3>
-    <img src="lion.jpg" alt="" width="263" height="236" style="outline: solid">
+    <img src="../../image/lion.jpg" alt="" width="263" height="236" style="outline: solid">
 
     <h3>Generate content</h3>
 
@@ -301,7 +301,7 @@
 
     <p>How older Kato said: <span class="kato">[quote from Katon]</span> </p>
 
-    <h2><a href="../index.html#return">Return to main page</a> </h2>
+    <h2><a href="../../index.html#return">Return to main page</a> </h2>
 
 </body>
 </html>
